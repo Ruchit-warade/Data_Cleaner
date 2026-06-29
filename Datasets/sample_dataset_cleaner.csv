@@ -1,0 +1,103 @@
+ Employee ID ,Name,Age,Salary,Country,Department,Email,Join Date,Active,Performance Score,Constant Column
+1,User1,45,35000.0,India,Engineering,user1@example.com,2021-05-16,True,67.0,CONST
+2,User2,45,35000.0,Canada,Support,user2@example.com,2020-06-27,False,55.0,CONST
+3,User3,22,35000.0,USA,HR,user3@example.com,2022-10-31,True,91.0,CONST
+4,User4,25,,Canada,Support,user4@example.com,2022-05-09,True,88.0,CONST
+5,User5,40,65000.0,,Sales,user5@example.com,2024-04-03,True,,CONST
+6,User6,35,65000.0,UK,HR,user6@example.com,2021-03-16,False,55.0,CONST
+7,User7,22,80000.0,India,Engineering,user7@example.com,2024-10-01,False,91.0,CONST
+8,User8,30,35000.0,Canada,Marketing,user8@example.com,2023-01-03,True,88.0,CONST
+9,User9,22,95000.0,UK,Support,user9@example.com,2024-10-30,False,91.0,CONST
+10,User10,25,,India,Sales,user10@example.com,2023-09-16,True,78.0,CONST
+11,User11,22,50000.0,,Sales,user11@example.com,2022-02-17,False,88.0,CONST
+12,User12,45,65000.0,USA,Engineering,user12@example.com,2021-12-28,True,,CONST
+13,User13,30,,Canada,Sales,user13@example.com,2023-06-01,True,91.0,CONST
+14,User14,45,50000.0,USA,Marketing,user14@example.com,2022-02-16,False,,CONST
+15,User15,450,95000.0,USA,Engineering,user15@example.com,2024-09-22,True,67.0,CONST
+16,User16,,35000.0,,Engineering,user16@example.com,2022-04-01,False,55.0,CONST
+17,User17,25,95000.0,Canada,Engineering,user17@example.com,2021-03-11,False,88.0,CONST
+18,User18,45,80000.0,USA,Engineering,user18@example.com,2020-10-12,True,,CONST
+19,User19,40,95000.0,UK,Support,user19@example.com,2022-05-27,False,78.0,CONST
+20,User20,25,50000.0, INDIA ,Marketing,user20@example.com,2020-07-05,True,55.0,CONST
+21,User21,25,,USA,Marketing,user21@example.com,2023-05-06,True,88.0,CONST
+22,User22,35,95000.0,india,Support,user22@example.com,2021-05-29,True,,CONST
+23,User23,45,35000.0,Canada,Support,user23@example.com,2024-03-17,False,,CONST
+24,User24,30,35000.0,UK,Marketing,user24@example.com,2020-11-19,False,55.0,CONST
+25,User25,45,9999999.0,UK,Support,user25@example.com,2024-04-09,True,91.0,CONST
+26,User26,22,,UK,Support,user26@example.com,2023-06-01,True,67.0,CONST
+27,User27,30,50000.0, INDIA ,Support,user27@example.com,2020-01-02,False,88.0,CONST
+28,User28,22,35000.0,UK,Engineering,user28@example.com,2021-05-05,True,67.0,CONST
+29,User29,40,35000.0,India,Marketing,user29@example.com,2024-07-29,True,91.0,CONST
+30,User30,,50000.0,USA,Marketing,user30@example.com,2023-01-30,True,78.0,CONST
+31,User31,40,95000.0,india,HR,user31@example.com,2023-01-09,True,,CONST
+32,User32,30,80000.0,Canada,Engineering,user32@example.com,2022-06-16,False,55.0,CONST
+33,User33,25,50000.0,India,Engineering,user33@example.com,2020-02-13,True,91.0,CONST
+34,User34,25,35000.0,India,Sales,user34@example.com,2021-04-13,True,55.0,CONST
+35,User35,,65000.0,India,Support,user35@example.com,2021-05-02,False,,CONST
+36,User36,35,50000.0, INDIA ,HR,user36@example.com,2024-01-21,False,67.0,CONST
+37,User37,,80000.0,,Marketing,user37@example.com,2021-01-24,True,55.0,CONST
+38,User38,45,80000.0,UK,Marketing,user38@example.com,2022-04-21,False,,CONST
+39,User39,22,,Canada,Sales,user39@example.com,2020-05-04,False,,CONST
+40,User40,30,35000.0,USA,HR,user40@example.com,2021-01-24,False,67.0,CONST
+41,User41,35,50000.0,UK,Marketing,user41@example.com,2021-05-26,True,88.0,CONST
+42,User42,,95000.0,India,Sales,user42@example.com,2023-08-28,True,55.0,CONST
+43,User43,,50000.0,USA,Marketing,user43@example.com,2022-09-21,False,67.0,CONST
+44,User44,,80000.0,India,HR,user44@example.com,2022-02-15,True,88.0,CONST
+45,User45,30,80000.0,UK,Marketing,user45@example.com,2023-11-27,False,67.0,CONST
+46,User46,25,65000.0,USA,Sales,user46@example.com,2023-04-01,True,,CONST
+47,User47,30,35000.0,India,Support,user47@example.com,2022-09-03,True,55.0,CONST
+48,User48,40,35000.0,,HR,user48@example.com,2020-05-20,True,,CONST
+49,User49,,50000.0,india,Sales,user49@example.com,2023-03-12,True,91.0,CONST
+50,User50,40,35000.0, INDIA ,Sales,invalid_email,2022-05-08,False,78.0,CONST
+51,User51,25,,Canada,Engineering,user51@example.com,2021-05-03,False,88.0,CONST
+52,User52,25,,Canada,Engineering,user52@example.com,2022-07-25,False,55.0,CONST
+53,User53,22,80000.0, INDIA ,Support,user53@example.com,2020-07-23,True,91.0,CONST
+54,User54,25,95000.0,UK,HR,user54@example.com,2021-12-15,True,67.0,CONST
+55,User55,30,65000.0,USA,Marketing,user55@example.com,2024-09-03,False,91.0,CONST
+56,User56,,, INDIA ,Sales,user56@example.com,2023-09-29,False,,CONST
+57,User57,22,50000.0,UK,Sales,user57@example.com,2020-08-07,True,78.0,CONST
+58,User58,30,95000.0,USA,Engineering,user58@example.com,2021-02-20,False,91.0,CONST
+59,User59,35,65000.0,,Sales,user59@example.com,2020-07-08,False,78.0,CONST
+60,User60,22,35000.0,UK,HR,user60@example.com,2023-07-28,False,67.0,CONST
+61,User61,45,80000.0, INDIA ,Marketing,user61@example.com,2023-02-22,True,55.0,CONST
+62,User62,22,,USA,Support,user62@example.com,2020-03-14,False,91.0,CONST
+63,User63,40,50000.0,india,HR,user63@example.com,2020-03-26,False,78.0,CONST
+64,User64,,35000.0,UK,HR,user64@example.com,2023-10-28,True,,CONST
+65,User65,22,65000.0,,Support,user65@example.com,2024-11-26,False,91.0,CONST
+66,User66,45,50000.0,USA,HR,user66@example.com,2024-06-26,True,88.0,CONST
+67,User67,22,50000.0,Canada,Engineering,user67@example.com,2024-05-21,False,,CONST
+68,User68,,,,HR,user68@example.com,2021-06-30,True,,CONST
+69,User69,22,80000.0,,Sales,user69@example.com,2024-10-24,False,67.0,CONST
+70,User70,25,80000.0,UK,Engineering,user70@example.com,2024-08-07,True,67.0,CONST
+71,User71,22,,USA,Marketing,user71@example.com,2021-11-03,False,55.0,CONST
+72,User72,,65000.0,UK,Support,user72@example.com,2022-03-29,False,55.0,CONST
+73,User73,22,65000.0,USA,Support,user73@example.com,2021-06-27,True,55.0,CONST
+74,User74,40,80000.0,UK,Engineering,user74@example.com,2022-06-12,True,88.0,CONST
+75,User75,40,50000.0,UK,Sales,user75@example.com,2023-12-22,False,55.0,CONST
+76,User76,40,95000.0,Canada,HR,user76@example.com,2022-01-15,False,55.0,CONST
+77,User77,45,65000.0, INDIA ,Engineering,user77@example.com,2023-09-20,True,,CONST
+78,User78,30,95000.0,UK,Marketing,user78@example.com,2021-10-30,False,,CONST
+79,User79,30,95000.0,USA,HR,user79@example.com,2022-05-11,False,,CONST
+80,User80,45,50000.0, INDIA ,Support,user80@example.com,2021-09-08,False,91.0,CONST
+81,User81,,35000.0,UK,Engineering,user81@example.com,2021-03-06,False,91.0,CONST
+82,User82,40,,UK,Marketing,user82@example.com,2022-06-23,False,,CONST
+83,User83,25,95000.0,india,HR,user83@example.com,2023-09-11,True,78.0,CONST
+84,User84,40,,Canada,Support,user84@example.com,2021-11-17,True,67.0,CONST
+85,User85,45,65000.0,USA,HR,user85@example.com,2020-10-28,True,55.0,CONST
+86,User86,25,80000.0, INDIA ,Sales,user86@example.com,2022-07-21,False,,CONST
+87,User87,40,50000.0,Canada,Marketing,user87@example.com,2022-10-09,False,67.0,CONST
+88,User88,25,,Canada,Sales,user88@example.com,2024-03-17,True,88.0,CONST
+89,User89,25,50000.0,,Support,user89@example.com,2022-08-09,True,91.0,CONST
+90,User90,25,35000.0,india,HR,user90@example.com,2024-06-29,False,,CONST
+91,User91,40,95000.0, INDIA ,Engineering,user91@example.com,2024-03-26,False,91.0,CONST
+92,User92,,, INDIA ,Marketing,user92@example.com,2024-08-28,False,67.0,CONST
+93,User93,45,80000.0,india,Engineering,user93@example.com,2024-03-19,True,,CONST
+94,User94,30,95000.0,india,HR,user94@example.com,2021-07-16,False,55.0,CONST
+95,User95,45,65000.0,USA,Engineering,user95@example.com,2021-11-18,False,91.0,CONST
+96,User96,22,50000.0,USA,HR,user96@example.com,2022-02-23,True,,CONST
+97,User97,25,35000.0,india,Marketing,user97@example.com,2021-11-08,False,88.0,CONST
+98,User98,22,50000.0,,Marketing,user98@example.com,2022-03-08,True,91.0,CONST
+99,User99,35,80000.0,India,Engineering,user99@example.com,2021-09-03,False,88.0,CONST
+100,User100,40,,Canada,Support,user100@example.com,2024-06-26,True,88.0,CONST
+11,User11,22,50000.0,,Sales,user11@example.com,2022-02-17,False,88.0,CONST
+21,User21,25,,USA,Marketing,user21@example.com,2023-05-06,True,88.0,CONST
