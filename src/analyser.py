@@ -127,5 +127,4 @@ def column_seg(x):
         unique(i,scores,x)
         category[i] = ("Unknown" if all(v == 0 for v in scores.values()) else max(scores, key=scores.get))
         scores = dict.fromkeys(scores, 0)
-    filled_data = {k: ("Unknown" if v == '' else v) for k, v in category.items()}    
     print(pd.DataFrame([category]))
