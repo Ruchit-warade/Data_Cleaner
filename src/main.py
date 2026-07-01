@@ -3,14 +3,16 @@ import numpy as np
 import loader,cleaner,analyser,reporter,utils,sys
 
 file = loader.load_file()
-print('''1. View Dataset Summary\n
-2. Analyze Missing Values\n
-3. Detect Outliers\n
-4. View Suggestions\n
-5. Clean Dataset\n
-6. Generate Report\n
-7. Export Dataset\n
-8. Exit\n''')
+file_new = file.drop_duplicates()
+print('''1. View Dataset Summary
+2. Analyze Missing Values
+3. Classify Columns      
+4. Detect Outliers
+5. View Suggestions
+6. Clean Dataset
+7. Generate Report
+8. Export Dataset
+9. Exit''')
 
 check = int(input("Please Enter a choice :- "))
 
@@ -19,3 +21,6 @@ if(check == 1):
 
 elif(check == 2):
     analyser.missing_values(file)
+
+elif(check == 3):
+    analyser.column_seg(file_new)
