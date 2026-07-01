@@ -1,7 +1,7 @@
 import pandas as pd  
 import numpy as np
 import pandas.api.types as pdty
-import re,math
+import re,math,tqdm
 
 def data_summary(x):
     print(f"Rows :- {x.shape[0]}\nColumns :- {x.shape[1]}")
@@ -32,7 +32,7 @@ def type_int(column,dict,x):
         dict["Identifier"] = dict.get("Identifier") + 10        
 
 def word_find(word,text):
-    return bool(re.search(word, text, re.IGNORECASE))
+    return bool(re.search(rf"\b{re.escape(word)}\b", text, re.IGNORECASE))
 
 def column_name(column,dict):
     if(word_find("id|roll|nvoice|customer",column) == True):
@@ -68,12 +68,12 @@ def number_date(column,dict,x):
             list.append(False)
     arr = np.array(list)        
     num_per = arr.mean()  # Mean of booleans = proportion of True
-    if(num_per >= 0.8):
+    if(num_per >= 0.95):
         dict["Numeric"] = dict.get("Numeric") + 40 
     list.clear()    
     date_ = np.array(date)
     date_per = date_.mean()
-    if (date_per >= 0.8):
+    if (date_per >= 0.95):
         dict["Date"] = dict.get("Date") + 50
     date.clear()
 
@@ -83,7 +83,7 @@ def email(column,dict,x):
         email.append(word_find("@", str(i)))
     email_  = np.array(email)
     email_per = email_.mean()
-    if(email_per >= 0.8):
+    if(email_per >= 0.95):
         dict["Email"] = dict.get("Email") + 60
     email.clear()
 
@@ -110,14 +110,14 @@ def unique(column,dict,x):
             length.append(False)
     length_ = np.array(length)
     length_per  = length_.mean()
-    if(length_per >= 0.8):
-        dict["Text"] = dict.get("Text") + 50      
+    if(length_per >= 0.95):
+        dict["Text"] = dict.get("Text") + 60      
 
 def column_seg(x):
     column_list = x.columns.tolist()
     category = {}
     scores = {"Identifier": 0,"Numeric": 0,"Categorical": 0,"Date": 0,"Boolean" : 0,"Email" : 0,"Name" : 0,"Text" : 0}
-    for i in column_list:
+    for i in tqdm.tqdm(column_list):
         type_bool(i,scores,x)
         type_float(i,scores,x)
         type_int(i,scores,x)
@@ -125,7 +125,7 @@ def column_seg(x):
         number_date(i,scores,x)
         email(i,scores,x)
         unique(i,scores,x)
-        max_key = max(scores, key=scores.get)
-        category[i] = max_key
+        category[i] = ("Unknown" if all(v == 0 for v in scores.values()) else max(scores, key=scores.get))
         scores = dict.fromkeys(scores, 0)
+    filled_data = {k: ("Unknown" if v == '' else v) for k, v in category.items()}    
     print(pd.DataFrame([category]))
